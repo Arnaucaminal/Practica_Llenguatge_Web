@@ -11,8 +11,11 @@
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <a class="logo" href="index.html">El Món dels Videojocs</a>
-            <button id="menuBtn3" class="menu-btn" aria-label="Obrir menú">☰</button>
+            <span class="logo">
+          <a class="logo-img" href="index.html" style=" height: var(--header-logo); display: flex; align-items: center;">
+            <img src="Images/control_logo.png" alt="logo" style="max-height: 64px" width="80" height="80"/> 
+          </a>
+        </span>
             <nav id="mainNav3" class="main-nav">
                 <a href="index.html">Inici</a>
                 <a href="content.html">Contingut</a>
@@ -45,9 +48,9 @@
                 alt="Imatge 8" class="gallery-item" data-caption="Imatge 8 - Evolució del Mario al llarg dels anys">
         </section>
 
-        <div id="lightbox" class="lightbox hidden" role="dialog" aria-hidden="true">
-            <button id="lbClose" class="lb-close" aria-label="Tancar">✕</button>
-            <img id="lbImage" src="" alt="">
+        <div id="lightbox" class="lightbox hidden">
+            <button id="lbClose" class="lb-close">✕</button>
+            <img id="lbImage" src="" alt="Imatge ampliada">
             <p id="lbCaption"></p>
         </div>
 
@@ -64,5 +67,7 @@
 
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
